@@ -18,7 +18,13 @@
             "homepage": "http://www.zeineddin.name/"
         }
     ],
-    "minimum-stability": "dev-master",
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/ZeinEddin/DoctrineExtensions"
+        }
+    ],
     "require": {
         "php": ">=5.3",
         "zeineddin/doctrine-extensions": "dev-master"
