@@ -18,7 +18,6 @@
             "homepage": "http://www.zeineddin.name/"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php": ">=5.3",
         "zeineddin/doctrine-extensions": "dev-master"
