@@ -1,7 +1,7 @@
 <?php
-namespace ZfDoctrineExtensions;
+namespace ZeZfDoctrineExtensions;
 
-use DoctrineExtensions\Utils as DoctrineExtensionsUtilts;
+use ZeDoctrineExtensions\Utils as ZeDoctrineExtensionsUtilts;
 use Zend\ModuleManager\ModuleManager;
 use Zend\ModuleManager\ModuleEvent;
 
@@ -33,7 +33,7 @@ class Module
             
             $config['doctrine']['configuration'][$configKey] = array_merge_recursive(
                 $existingMap,
-                DoctrineExtensionsUtilts::getOracleDQLFunctions()
+                ZeDoctrineExtensionsUtilts::getOracleDQLFunctions()
             );
         }
 
@@ -49,7 +49,7 @@ class Module
             
             $config['doctrine']['configuration'][$configKey] = array_merge_recursive(
                 $existingMap,
-                DoctrineExtensionsUtilts::getMysqlDQLFunctions()
+                ZeDoctrineExtensionsUtilts::getMysqlDQLFunctions()
             );
         }
 
