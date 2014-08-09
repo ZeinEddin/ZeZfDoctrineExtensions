@@ -1,9 +1,9 @@
 <?php
 namespace ZfDoctrineExtensions;
 
-use DoctrineExtensions\Utilts as DoctrineExtensionsUtilts;
+use DoctrineExtensions\Utils as DoctrineExtensionsUtilts;
 use Zend\ModuleManager\ModuleManager;
-use Zend\ModuleManager\ModuleManager;
+use Zend\ModuleManager\ModuleEvent;
 
 class Module
 {
