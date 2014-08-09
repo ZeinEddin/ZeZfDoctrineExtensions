@@ -24,15 +24,33 @@ class Module
         // Modify the configuration; here, we'll add Oracle Custom DQL Functions:
         if (isset($config['zf_doctrine_extensions']['oracle_doctrine_driver_config_key'])) {
             $configKey = $config['zf_doctrine_extensions']['oracle_doctrine_driver_config_key'];
-            $config['doctrine']['configuration'][$configKey] =
-                DoctrineExtensionsUtilts::getOracleDQLFunctions();
+            //Get existing map (if any) to be merged with the module map
+            if (isset($config['doctrine']['configuration'][$configKey])) {
+                $existingMap = $config['doctrine']['configuration'][$configKey];
+            } else {
+                $existingMap = array();
+            }
+            
+            $config['doctrine']['configuration'][$configKey] = array_merge_recursive(
+                $existingMap,
+                DoctrineExtensionsUtilts::getOracleDQLFunctions()
+            );
         }
 
         // Modify the configuration; here, we'll add MySQL Custom DQL Functions:
         if (isset($config['zf_doctrine_extensions']['mysql_doctrine_driver_config_key'])) {
             $configKey = $config['zf_doctrine_extensions']['mysql_doctrine_driver_config_key'];
-            $config['doctrine']['configuration'][$configKey] =
-                DoctrineExtensionsUtilts::getMysqlDQLFunctions();
+            //Get existing map (if any) to be merged with the module map
+            if (isset($config['doctrine']['configuration'][$configKey])) {
+                $existingMap = $config['doctrine']['configuration'][$configKey];
+            } else {
+                $existingMap = array();
+            }
+            
+            $config['doctrine']['configuration'][$configKey] = array_merge_recursive(
+                $existingMap,
+                DoctrineExtensionsUtilts::getMysqlDQLFunctions()
+            );
         }
 
         // Pass the changed configuration back to the listener:
