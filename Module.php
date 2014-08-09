@@ -22,8 +22,8 @@ class Module
         $config         = $configListener->getMergedConfig(false);
 
         // Modify the configuration; here, we'll add Oracle Custom DQL Functions:
-        if (isset($config['zf_doctrine_extensions']['oracle_doctrine_driver_config_key'])) {
-            $configKey = $config['zf_doctrine_extensions']['oracle_doctrine_driver_config_key'];
+        if (isset($config['ze_zf_doctrine_extensions']['oracle_doctrine_driver_config_key'])) {
+            $configKey = $config['ze_zf_doctrine_extensions']['oracle_doctrine_driver_config_key'];
             //Get existing map (if any) to be merged with the module map
             if (isset($config['doctrine']['configuration'][$configKey])) {
                 $existingMap = $config['doctrine']['configuration'][$configKey];
@@ -38,8 +38,8 @@ class Module
         }
 
         // Modify the configuration; here, we'll add MySQL Custom DQL Functions:
-        if (isset($config['zf_doctrine_extensions']['mysql_doctrine_driver_config_key'])) {
-            $configKey = $config['zf_doctrine_extensions']['mysql_doctrine_driver_config_key'];
+        if (isset($config['ze_zf_doctrine_extensions']['mysql_doctrine_driver_config_key'])) {
+            $configKey = $config['ze_zf_doctrine_extensions']['mysql_doctrine_driver_config_key'];
             //Get existing map (if any) to be merged with the module map
             if (isset($config['doctrine']['configuration'][$configKey])) {
                 $existingMap = $config['doctrine']['configuration'][$configKey];

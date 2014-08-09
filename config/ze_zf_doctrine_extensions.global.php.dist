@@ -1,6 +1,6 @@
 <?php
 return array(
-    'zf_doctrine_extensions' => array(
+    'ze_zf_doctrine_extensions' => array(
         // Set the Oracel Doctrine Driver Config Key Name
         //'oracle_doctrine_driver_config_key' => 'orm_default',
         
