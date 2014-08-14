@@ -23,3 +23,14 @@ The recommended way to install `zeineddin/ze-zf-doctrine-extensions` is through
     ```bash
     $ php composer.phar update
     ```
+
+
+Configuration
+-------------
+
+Default configurations are provided in
+[config/ze_zf_doctrine_extensions.global.php.dist](config/ze_zf_doctrine_extensions.global.php.dist).
+You can copy it to your application's `config/autoload` directory and remove the `.dist` extension
+from the file name.
+
+Then choose the right Doctrine Driver Config Key Name for the database you want.
