@@ -15,14 +15,8 @@
         {
             "name": "Mohammad ZeinEddin",
             "email": "mohammad@zeineddin.name",
-            "homepage": "http://www.zeineddin.name/"
-        }
-    ],
-    "minimum-stability": "dev",
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/ZeinEddin/ZeDoctrineExtensions"
+            "homepage": "http://www.zeineddin.name/",
+            "role": "Developer"
         }
     ],
     "require": {
