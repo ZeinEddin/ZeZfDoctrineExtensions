@@ -2,8 +2,8 @@
 namespace ZeZfDoctrineExtensions;
 
 use ZeDoctrineExtensions\Utils as ZeDoctrineExtensionsUtilts;
-use Zend\ModuleManager\ModuleManager;
-use Zend\ModuleManager\ModuleEvent;
+use Laminas\ModuleManager\ModuleManager;
+use Laminas\ModuleManager\ModuleEvent;
 
 class Module
 {
